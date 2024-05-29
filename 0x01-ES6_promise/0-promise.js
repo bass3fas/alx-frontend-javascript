@@ -2,7 +2,14 @@
 export default function getResponseFromAPI() {
 	return new Promise((resolve, reject) => {
 		setTimeout(() => {
-			resolve('Responce received');
+			try {
+				
+				const response = ('Responce received');
+				resolve(response);
+			} catch (error) {
+				reject(error);
+			}
+
 		}, 1000);
 	});
 }

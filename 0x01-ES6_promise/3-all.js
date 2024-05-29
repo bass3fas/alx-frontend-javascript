@@ -1,5 +1,4 @@
-import { uploadPhoto, createUser } from './utils.js';
-
+import { uploadPhoto, createUser } from './utils';
 
 export default function handleProfileSignup() {
   const p1 = uploadPhoto();
